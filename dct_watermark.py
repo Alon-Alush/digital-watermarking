@@ -44,7 +44,7 @@ class DCT_Watermark(Watermark):
         sig_size = 100
         size = self.size
 
-        ext_sig = np.zeros(sig_size**2, dtype=np.int)
+        ext_sig = np.zeros(sig_size**2, dtype=int)
 
         for i in range(0, sig_size * size, size):
             for j in range(0, sig_size * size, size):
